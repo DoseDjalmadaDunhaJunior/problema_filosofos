@@ -1,0 +1,3 @@
+/home/jose/Área de Trabalho/Filosofo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/jose/Área de Trabalho/Filosofo/cmake-build-debug/CMakeFiles/Filosofo.dir
+/home/jose/Área de Trabalho/Filosofo/cmake-build-debug/CMakeFiles/edit_cache.dir

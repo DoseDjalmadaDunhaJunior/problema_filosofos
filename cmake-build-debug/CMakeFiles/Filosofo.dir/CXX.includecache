@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jose/Área de Trabalho/Filosofo/main.cpp
+iostream
+-
+stdio.h
+-
+stdlib.h
+-
+time.h
+-
+
