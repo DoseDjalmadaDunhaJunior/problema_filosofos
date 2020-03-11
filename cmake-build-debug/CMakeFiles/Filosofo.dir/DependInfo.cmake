@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/jose/Área de Trabalho/Filosofo/main.cpp" "/home/jose/Área de Trabalho/Filosofo/cmake-build-debug/CMakeFiles/Filosofo.dir/main.cpp.o"
+  "/media/djalma/09BBDA931A86D9AA/paradas_de_algoritmo/Setimo_semestre/Sistemas_distribuidos/problema_filosofos/main.cpp" "/media/djalma/09BBDA931A86D9AA/paradas_de_algoritmo/Setimo_semestre/Sistemas_distribuidos/problema_filosofos/cmake-build-debug/CMakeFiles/Filosofo.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

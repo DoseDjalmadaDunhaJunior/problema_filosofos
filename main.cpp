@@ -3,12 +3,13 @@
 #include <stdlib.h>
 #include <time.h>
 using namespace std;
+
 int main() {
         int filosofos = 5, colheres = 5,tempo = 100, porcentagem = 10, c0 = 0;
 
         struct filosofo{
-            int Tcomendo = 0;
-            int Tpensando = 0;
+            float Tcomendo = 0;
+            float Tpensando = 0;
             int porcentagemComendo = 0;
             int colherDisponivel = 1;
             //0 não pegou -1 pegou da esquerda e 1 pegou da direita
@@ -172,25 +173,27 @@ int main() {
             e.Tcomendo++;
         }
     }
-    printf("A = %i\n"
-           "B = %i\n"
-           "C = %i\n"
-           "D = %i\n"
-           "E = %i\n",a.Tcomendo,b.Tcomendo,c.Tcomendo,
+
+
+    printf("A = %f\n"
+           "B = %f\n"
+           "C = %f\n"
+           "D = %f\n"
+           "E = %f\n",a.Tcomendo,b.Tcomendo,c.Tcomendo,
            d.Tcomendo,e.Tcomendo);
-
-    printf("A = %i\n"
-           "B = %i\n"
-           "C = %i\n"
-           "D = %i\n"
-           "E = %i\n",a. Tpensando,b. Tpensando,c. Tpensando,
+puts("");
+    printf("A = %f\n"
+           "B = %f\n"
+           "C = %f\n"
+           "D = %f\n"
+           "E = %f\n",a. Tpensando,b. Tpensando,c. Tpensando,
            d. Tpensando,e. Tpensando);
-
-    printf("A = %i\n"
-           "B = %i\n"
-           "C = %i\n"
-           "D = %i\n"
-           "E = %i\n",(a.Tcomendo/a.Tpensando),(b.Tcomendo/b.Tpensando),(c.Tcomendo/c.Tpensando),
+    puts("");
+    printf("A = %f\n"
+           "B = %f\n"
+           "C = %f\n"
+           "D = %f\n"
+           "E = %f\n",(a.Tcomendo/a.Tpensando),(b.Tcomendo/b.Tpensando),(c.Tcomendo/c.Tpensando),
            (d. Tpensando/d.Tpensando),(e.Tcomendo/e.Tpensando));
     return 0;
 }

@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/Filosofo.dir/main.cpp.o  -o Filosofo 
+/usr/bin/g++  -g   CMakeFiles/Filosofo.dir/main.cpp.o  -o Filosofo 
