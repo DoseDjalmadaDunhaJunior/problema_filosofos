@@ -5,7 +5,7 @@
 using namespace std;
 
 int main() {
-        int filosofos = 5, colheres = 5,tempo = 100, porcentagem = 10, c0 = 0, comendo = 0;
+        int filosofos = 5, colheres = 5,tempo = 10000, porcentagem = 1000, c0 = 0, comendo = 0;
 
         struct filosofo{
             float Tcomendo = 0;
@@ -21,6 +21,68 @@ int main() {
         
     srand (time(NULL));
         struct  filosofo a,b,c,d,e;
+
+    for (int i = 0; i < tempo; i++) {
+        if(a.ok && a.Tcomendo == porcentagem){
+            a.ok = false;
+            colheres+=2;
+        }
+        if(b.ok && b.Tcomendo == porcentagem){
+            b.ok = false;
+            colheres+2;
+        }
+        if(c.ok && c.Tcomendo == porcentagem){
+            c.ok = false;
+            colheres+=2;
+        }
+        if(d.ok && d.Tcomendo == porcentagem){
+            d.ok = false;
+            colheres+=2;
+        }
+        if(e.ok && e.Tcomendo == porcentagem){
+            e.ok = false;
+            colheres+=2;
+        }
+        if(colheres >= 2) {
+            c0 = rand() % 5 + 1;
+            if (c0 == 1) {
+                a.ok = true;
+                colheres = colheres -2;
+            }
+            else if(c0 == 2){
+                b.ok = true;
+                colheres = colheres -2;
+            }
+            else if(c0 == 3){
+                c.ok = true;
+                colheres = colheres -2;
+            }
+            else if(c0 == 4){
+                d.ok = true;
+                colheres = colheres -2;
+            }
+            else if(c0 == 5){
+                e.ok = true;
+                colheres = colheres -2;
+            }
+        }
+        if(!a.ok) {
+            a.Tpensando++;
+        }
+        if(!b.ok){
+            b.Tpensando++;
+        }
+        if(!c.ok){
+            c.Tpensando++;
+        }
+        if(!d.ok){
+            d.Tpensando++;
+        }
+        if(!e.ok){
+            e.Tpensando++;
+        }
+    }
+        /*
     for (int i = 0; i < tempo; i++) {
         c0 = rand() % 5 + 1;
         // true == comendo;
@@ -202,7 +264,7 @@ int main() {
         }
     }
 
-
+*/
     printf("A = %f\n"
            "B = %f\n"
            "C = %f\n"
